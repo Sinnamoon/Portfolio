@@ -18,12 +18,13 @@ import logoHenriTrip from '@/images/logos/henri-trip.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoYnovCampus from '@/images/logos/ynov-campus.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import printer from '@/images/photos/3d-printer.jpg'
+import modelLighter from '@/images/photos/model-lighter.jpg'
 import lighter from '@/images/photos/lighter.jpg'
+import image1 from '@/images/photos/image-1.jpg'
+import image5 from '@/images/photos/image-5.jpg'
+import yaya from '@/images/photos/yaya.gif'
+
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -261,7 +262,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, lighter, image3, image4, image5].map((image, imageIndex) => (
+        {[modelLighter, lighter, printer, yaya, printer].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
