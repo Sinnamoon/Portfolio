@@ -28,6 +28,9 @@ import yaya from '@/images/photos/yaya.gif'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
+import React from 'react'
+import { CircleFlag } from 'react-circle-flags'
+import { useState } from 'react'
 
 function MailIcon(props) {
   return (
@@ -130,17 +133,17 @@ function DownloadCV() {
           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
         /> */}
         <a className="m-auto flex" href="../../public/Joan_CV_FR.pdf" download>
-       <Button  variant="secondary" className="m-auto flex">
-        <Image src={logoFrFlag} alt="fr flag" className="max-w-[2rem]"/>
-        Français
-      </Button>
-      </a>
-      <a className="m-auto flex" href="../../public/Joan_CV_EN.pdf" download>
-      <Button  variant="secondary" className="m-auto flex">
-        <Image src={logoUkFlag} alt="uk flag" className="max-w-[2rem]"/>
-        English 
-      </Button>
-      </a>
+          <Button variant="secondary" className="m-auto flex">
+            <Image src={logoFrFlag} alt="fr flag" className="max-w-[2rem]" />
+            Français
+          </Button>
+        </a>
+        <a className="m-auto flex" href="../../public/Joan_CV_EN.pdf" download>
+          <Button variant="secondary" className="m-auto flex">
+            <Image src={logoUkFlag} alt="uk flag" className="max-w-[2rem]" />
+            English
+          </Button>
+        </a>
       </div>
     </div>
   )
@@ -168,7 +171,6 @@ function Newsletter() {
           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
         />
         <Button type="submit" className="ml-4 flex-none">
-          
           Join
         </Button>
       </div>
@@ -251,7 +253,6 @@ function Resume() {
           </li>
         ))}
       </ol>
-      
     </div>
   )
 }
@@ -262,7 +263,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[modelLighter, lighter, printer, yaya, printer].map((image, imageIndex) => (
+        {[modelLighter, lighter, yaya, printer].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -284,37 +285,77 @@ function Photos() {
 }
 
 export default function Home({ articles }) {
+  const [language, setLanguage] = useState('English')
   return (
     <>
       <Head>
-        <title>
-          Joan Glendinning - Software developper & student.
-        </title>
+        <title>Joan Glendinning - Software developper & student.</title>
+
         <meta
           name="description"
           content="I’m Joan, a software developper based in the dynamic city of Toulouse."
         />
       </Head>
+
       <Container className="mt-9">
         <div className="max-w-3l">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+        {language === 'English' ? (
+        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Software developper & student
           </h1>
-          <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
-            <Balancer>
-            Hi ! I’m Joan, a software designer based in the dynamic city of Toulouse. <br/>
-            I’m currently in my third year of my bachelor’s degree as a student at Ynov Campus, where I’m studying web and applications development.<br/>
-            I have a strong passion for creating visually appealing and user-friendly websites that not only meet but exceed customer expectations.
-            My expertise lies in HTML, CSS, JavaScript and I’m constantly learning other web development technologies, such as React and Node.js. <br/>
-            Always eager to learn new skills and techniques to enhance my web development knowledge, I am actively seeking a co-op opportunity in web development to gain real-world experience and contribute to a company’s success.
-            </Balancer>
-          </p>
+        ) : (
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+            Développeuse web & étudiante
+          </h1>
+        )}
+          {language === 'English' ? (
+            <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
+              <Balancer>
+                Hi ! I’m Joan, a software designer based in the dynamic city of
+                Toulouse. <br />
+                I’m currently in my third year of my bachelor’s degree as a
+                student at Ynov Campus, where I’m studying web and applications
+                development.
+                <br />
+                I have a strong passion for creating visually appealing and
+                user-friendly websites that not only meet but exceed customer
+                expectations. My expertise lies in HTML, CSS, JavaScript and I’m
+                constantly learning other web development technologies, such as
+                React and Node.js. <br />
+                Always eager to learn new skills and techniques to enhance my
+                web development knowledge, I am actively seeking a co-op
+                opportunity in web development to gain real-world experience and
+                contribute to a company’s success.
+              </Balancer>
+            </p>
+          ) : (
+            <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
+              <Balancer>
+                Bonjour ! Je suis Joan, une conceptrice de logiciels basée dans
+                la ville dynamique de Toulouse. <br />
+                Je suis actuellement en troisième année de licence en
+                développement web et applications à Ynov Campus, où j'étudie.
+                <br />
+                J'ai une forte passion pour la création de sites web esthétiques
+                et intuitifs qui non seulement répondent, mais dépassent les
+                attentes des clients. Mon expertise se situe dans l'HTML, CSS,
+                JavaScript et j'apprends constamment d'autres outils de
+                développement, telles que React, Angular et Node.js. <br />
+                Toujours prête à apprendre de nouvelles compétences et techniques
+                pour améliorer mes connaissances en développement Web, je suis à
+                la recherche d'une opportunité d'alternance en développement Web
+                afin d'acquérir de l'expérience et contribuer au succès
+                d'une entreprise.
+              </Balancer>
+            </p>
+          )}
+
           <div className="mt-6 flex gap-6">
-            {/* <SocialLink
+            <SocialLink
               href="https://www.instagram.com/sinnamon.stix/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
-            /> */}
+            />
             <SocialLink
               href="https://github.com/Sinnamoon"
               aria-label="Follow on GitHub"
@@ -325,6 +366,25 @@ export default function Home({ articles }) {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
+            <div classname="relative">
+              <Button
+                variant="secondary"
+                className="absolute right-20 mx-3 rounded-full"
+                style={{ borderRadius: '75%' }}
+                onClick={() => setLanguage('French')}
+              >
+                <CircleFlag countryCode="fr" className="max-w-[2rem]" />
+              </Button>
+              <Button
+                variant="secondary"
+                className="absolute right-44 rounded-full"
+                style={{ borderRadius: '75%' }}
+                onClick={() => setLanguage('English')}
+              >
+                <CircleFlag countryCode="uk" className="max-w-[2rem]" />
+              </Button>
+              <div />
+            </div>
           </div>
         </div>
       </Container>
@@ -346,6 +406,8 @@ export default function Home({ articles }) {
     </>
   )
 }
+
+function changeToFrench() {}
 
 export async function getStaticProps() {
   if (process.env.NODE_ENV === 'production') {
