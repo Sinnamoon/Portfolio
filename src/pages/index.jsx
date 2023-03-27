@@ -369,7 +369,7 @@ export default function Home({ articles }) {
             <div classname="relative">
               <Button
                 variant="secondary"
-                className="absolute right-20 mx-3 rounded-full"
+                className="absolute right-4 mx-3 rounded-full"
                 style={{ borderRadius: '75%' }}
                 onClick={() => setLanguage('French')}
               >
@@ -377,7 +377,7 @@ export default function Home({ articles }) {
               </Button>
               <Button
                 variant="secondary"
-                className="absolute right-44 rounded-full"
+                className="absolute right-24 rounded-full"
                 style={{ borderRadius: '75%' }}
                 onClick={() => setLanguage('English')}
               >
