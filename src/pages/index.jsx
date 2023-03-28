@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -351,16 +352,22 @@ export default function Home({ articles }) {
           )}
 
           <div className="mt-6 flex gap-6">
-            <SocialLink
+            {/* <SocialLink
               href="https://www.instagram.com/sinnamon.stix/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
+            /> */}
+            <SocialLink
+              href="mailto:jonisouthanva@gmail.com"
+              aria-label="Email me"
+              icon={MailIcon}
             />
             <SocialLink
               href="https://github.com/Sinnamoon"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
+            
             <SocialLink
               href="https://www.linkedin.com/in/joan-glendinning-3a26971b6/"
               aria-label="Follow on LinkedIn"
