@@ -125,7 +125,7 @@ function MobileNavigation(props) {
                 <MobileNavItem href="/articles">Articles</MobileNavItem>
                 <MobileNavItem href="/projects">Projects</MobileNavItem>
                 <MobileNavItem href="/speaking">Speaking</MobileNavItem>
-                <MobileNavItem href="/uses">Contact</MobileNavItem>
+                <MobileNavItem href="/contact">Contact</MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -166,7 +166,7 @@ function DesktopNavigation(props) {
         <NavItem href="/about">About</NavItem>
         {/* <NavItem href="/articles">Articles</NavItem> */}
         <NavItem href="/projects">Experience</NavItem>
-        <NavItem href="/uses">Contact</NavItem>
+        <NavItem href="/contact">Contact</NavItem>
       </ul>
     </nav>
   )

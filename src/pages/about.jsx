@@ -121,40 +121,42 @@ export default function About() {
                     implementing a voice assistant. Gradually choosing more and
                     more complex projects. Everything I could imagine was
                     doable, it was like a world had opened up to me and the key
-                    was in that little box.<br/> This passion for digital devices is
-                    always present, personally one of the most interesting parts
-                    of my course currently is the study of the Arduino (a
-                    microcontroller) during my IOT course. More specifically,
-                    the interaction of these devices with the internet,
-                    something that we cannot see or touch, remained for me, the
-                    object of a mystery to be solved. How do they communicate?
-                    What can they be used for? What are the limits ? My
-                    curiosity therefore leads me to apply for a work-study
-                    program in web development, in order to be able to better
-                    understand the functioning of the networks that we use so
-                    much.<br/> Currently, I intend to continue my studies in the web,
-                    I also intend to obtain a work-study program in this field
-                    next year. I would finish my studies with a master's degree
-                    in web development. I think that my ease with languages will
-                    be useful for me to study abroad. I plan to work in China in
-                    the future (reason for which I continue to practice in the
-                    language), my facility to adapt myself in addition to the
-                    flexibility of my work will allow me to work everywhere in
-                    the world (practical when one likes to travel). <br/>Finally, I
-                    would like to conclude with my perspective on technology as
-                    a woman… Knowing that IT is an environment often dominated
-                    by men, I often doubted my place in these studies. However,
-                    the more I advance in my course, the more I realize the bias
-                    of technology. Women are often forgotten, this is gradually
-                    changing, but there is still a long way to go. Technology
-                    cannot be for men only while women are relegated to the
-                    background, when there are so many ways that technology
-                    could benefit women (for example, a conference I attended on
-                    the App-elles application, launched only in 2016, the first
-                    French solidarity application for women victims of
-                    violence). We therefore need more women in computer science
-                    to better represent the needs of society, and innovate in a
-                    balanced way.
+                    was in that little box.
+                    <br /> This passion for digital devices is always present,
+                    personally one of the most interesting parts of my course
+                    currently is the study of the Arduino (a microcontroller)
+                    during my IOT course. More specifically, the interaction of
+                    these devices with the internet, something that we cannot
+                    see or touch, remained for me, the object of a mystery to be
+                    solved. How do they communicate? What can they be used for?
+                    What are the limits ? My curiosity therefore leads me to
+                    apply for a work-study program in web development, in order
+                    to be able to better understand the functioning of the
+                    networks that we use so much.
+                    <br /> Currently, I intend to continue my studies in the
+                    web, I also intend to obtain a work-study program in this
+                    field next year. I would finish my studies with a master's
+                    degree in web development. I think that my ease with
+                    languages will be useful for me to study abroad. I plan to
+                    work in China in the future (reason for which I continue to
+                    practice in the language), my facility to adapt myself in
+                    addition to the flexibility of my work will allow me to work
+                    everywhere in the world (practical when one likes to
+                    travel). <br />
+                    Finally, I would like to conclude with my perspective on
+                    technology as a woman… Knowing that IT is an environment
+                    often dominated by men, I often doubted my place in these
+                    studies. However, the more I advance in my course, the more
+                    I realize the bias of technology. Women are often forgotten,
+                    this is gradually changing, but there is still a long way to
+                    go. Technology cannot be for men only while women are
+                    relegated to the background, when there are so many ways
+                    that technology could benefit women (for example, a
+                    conference I attended on the App-elles application, launched
+                    only in 2016, the first French solidarity application for
+                    women victims of violence). We therefore need more women in
+                    computer science to better represent the needs of society,
+                    and innovate in a balanced way.
                   </Balancer>
                 </p>
               ) : (
@@ -187,8 +189,9 @@ export default function About() {
                     progressivement, des projets de plus en plus complexes. Tout
                     ce que je pouvais imaginer était faisable, c’était comme si
                     un monde s’était ouvert à moi et la clé était dans cette
-                    petite boîte.<br/> Cette passion pour les appareils numériques
-                    est toujours présente, personnellement l'une des parties les
+                    petite boîte.
+                    <br /> Cette passion pour les appareils numériques est
+                    toujours présente, personnellement l'une des parties les
                     plus intéressantes de mon cursus actuellement est l’étude de
                     l’Arduino (un microcontrolleur) lors de mon cours IOT. Plus
                     précisément, l’interaction de ces appareils avec l’internet,
@@ -198,7 +201,8 @@ export default function About() {
                     sont les limites ? Ma curiosité m'amène donc à postuler pour
                     une alternance de développement web, afin de pouvoir mieux
                     comprendre le fonctionnement des réseaux que nous utilisons
-                    autant.<br/>  Actuellement, je compte continuer mes études dans le
+                    autant.
+                    <br /> Actuellement, je compte continuer mes études dans le
                     web, je compte également obtenir une alternance dans ce
                     domaine l'année prochaine. Je terminerais mes études avec un
                     master en développement web.Je pense que mon aisance avec
@@ -207,13 +211,13 @@ export default function About() {
                     laquelle je continue à m'exercer dans la langue), ma
                     facilité de m’adapter en plus de la flexibilité de mon
                     travail me permettra de travailler partout dans le monde
-                    (pratique quand on aime bien voyager). <br/>Finalement,
-                    j’aimerais conclure avec ma perspective sur la technologie
-                    en tant que femme… En sachant que l’informatique est un
-                    milieu souvent dominé par les hommes, j’ai souvent douté de
-                    ma place dans ces études. Cependant, plus j’avance dans mon
-                    cursus, plus je me rends compte du biais de la technologie.
-                    Les femmes sont souvent oubliées, cela change
+                    (pratique quand on aime bien voyager). <br />
+                    Finalement, j’aimerais conclure avec ma perspective sur la
+                    technologie en tant que femme… En sachant que l’informatique
+                    est un milieu souvent dominé par les hommes, j’ai souvent
+                    douté de ma place dans ces études. Cependant, plus j’avance
+                    dans mon cursus, plus je me rends compte du biais de la
+                    technologie. Les femmes sont souvent oubliées, cela change
                     progressivement, mais il reste un long chemin à parcourir.
                     La technologie ne peut pas etre réservé aux hommes tandis
                     que les femmes sont reléguées au second plan, alors qu’il
