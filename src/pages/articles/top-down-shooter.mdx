@@ -1,0 +1,46 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import asteroids from './asteroids.png'
+import Image from 'next/image'
+import PrairieKing from './PrairieKing.png'
+import wip from './wip.png'
+
+export const meta = {
+  author: 'Joan Glendinning',
+  date: '2023-03-29',
+  title: 'Recreating a top down shooter in Unity',
+  description:
+    'Reproducing classic games can be a fun and rewarding experience for game developers, and Unity is a great platform for doing so. In my own experience, I decided to remake the popular top-down shooter minigame, Journey of the Prairie King, from Stardew Valley. This allowed me to not only learn how to use Unity and C#, but also gain a deeper understanding of the game mechanics and complexity.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+In my second year of university we had about 2 months to freely choose a subject and produce something to present to the class. I chose to make a top down shooter in Unity inspired by one of my favourite games : Stardew Valley.
+
+To make this possible, I had to build a game from scratch, learn how to use Unity, and learn how to use C#. Thankfully, i had already made a first simple mini game in Unity, a remake of the popular arcade game Asteroids (which you can find on my [github](https://github.com/Sinnamoon/Asteroids)).  
+
+<Image src={asteroids} alt="asteroids" />
+
+Game design in Unity can be incredibly interesting and rewarding. With Unity's intuitive interface and powerful toolset, designers can create complex game mechanics and immersive environments that capture players' imaginations. Unity also offers a wide range of features and assets, including physics engines, audio tools, and visual effects, making it a versatile platform for developing games across multiple genres. Whether you're an experienced game designer or just starting out, Unity provides a robust and engaging framework for bringing your ideas to life.
+
+## Choice of the game
+
+<Image src={wip} alt="prairie King" />
+
+Journey of the Prairie King is a SmashTV-style minigame in the indie game Stardew Valley. The player controls a cowboy who must defend themselves from waves of monsters. The game is played in a top-down view, and the player can move their character around the screen using the arrow keys. The player can also shoot at the monsters using the spacebar. The game ends when the player's health reaches zero.
+I really enjoyed making this project and having other people test it out. Recreating a game i had already enjoyed playing really enbaled me to understand the game mechanics and how complex it is. 
+
+Journey of the Prairie King is a challenging and addictive minigame that requires quick reflexes, strategic thinking, and precise aim. As the player progresses through the game, they will encounter increasingly difficult waves of monsters that require more advanced tactics and skills to defeat.
+
+One of the key features of Journey of the Prairie King is the variety of power-ups and upgrades that the player can collect throughout the game. These power-ups can give the player additional health, faster movement speed, or more powerful weapons, making it easier to survive the later stages of the game.
+
+In addition to its engaging gameplay and challenging difficulty, Journey of the Prairie King also features beautiful pixel art graphics and a catchy retro-inspired soundtrack. The game's charming aesthetic and nostalgic feel make it a perfect fit for fans of classic arcade games.
+
+Overall, Journey of the Prairie King is a fantastic addition to the already impressive Stardew Valley game. Its fast-paced action and addictive gameplay provide hours of entertainment, while its retro-style visuals and music evoke a sense of nostalgia for classic arcade games. Whether you're a fan of Stardew Valley or just looking for a fun and challenging minigame to play, Journey of the Prairie King is definitely worth checking out.
+
+You can find the link to my game on my [github](https://github.com/Sinnamoon/PrairieKing)
+
+<Image src={PrairieKing} alt="prairie King" />
+
+
+Remaking games is a fabulous way to develop your skills as a programmer !
+

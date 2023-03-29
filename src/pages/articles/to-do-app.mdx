@@ -1,0 +1,46 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import animation from './animation.jpg'
+import deltasks from './deltasks.png'
+import note from './note.jpg'
+import splash from './splash.jpg'
+import edittasks from './tasks.png'
+import Image from 'next/image'
+
+export const meta = {
+  author: 'Joan Glendinning',
+  date: '2023-03-28',
+  title: 'To do app in Android',
+  description:
+    'Java is a widely-used programming language, but it has been around for a while and is not considered as cutting-edge as some of the newer languages. However, I found that Java\'s robustness and stability made it a great choice for developing a reliable and user-friendly to do app. Despite the popularity of newer programming languages, I believe that Java still has a lot to offer for mobile app development.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+A native android application, made with android studio in Java, a simple light-weight to do list app implementing CRUD. DB is in SQLite. features a note app and a lottie animation when task is checked
+
+## Screenshots of the application
+
+<div classname = "flex-auto flex-row">
+<Image src={splash} alt="splash" width={200} height={350} />
+<Image src={animation} alt="animation" width={200} height={350}/>
+<Image src={edittasks} alt="edit" width={200} height={350}/>
+</div>
+<Image src={deltasks} alt="del" width={200} height={350}/>
+<Image src={note} alt="note" width={200} height={350}/>
+
+
+## Features
+
+As an Android user myself, I wanted to create a simple, lightweight yet functional to-do list application that could be used on-the-go. I decided to use Android Studio and Java to develop this native Android application. The main goal of this project was to implement CRUD functionality with an SQLite database, allowing users to create, read, update and delete tasks.
+
+The app has a clean and minimalistic interface that is easy to navigate. Users can create a new task by hitting the plus floating button and entering a title with a description. The app also allows users to edit or delete tasks by swiping left or right on the task list. Completed tasks can be checked off with a satisfying Lottie animation.
+
+One of the unique features of this to-do list app is the note-taking feature. Users can navigate to a new note activity to jot down whatever thoughts they might have come up with. These notes are stored in the same database as the tasks and can be edited or deleted at any time.
+
+Implementing the CRUD functionality with SQLite was a key aspect of this project. 
+
+The app was developed with my android phone instead of an emulator because i wanted the app to be sure the app would be usable. The theme is green and black because i wanted to subliminally remind the user to be productive and get things done. The app is also very light weight and does not take up much space on the phone. Today, it is even used by a classmate of mine as it does not consume many resources and is very intuitive to use.
+
+In conclusion, this to-do list app showcases my skills in developing native Android applications with Java and Android Studio. It is a simple yet functional app that can help users stay organized and productive on-the-go. The implementation of CRUD functionality with SQLite demonstrates my proficiency in designing and managing databases for mobile applications. The note-taking feature and Lottie animation add a unique touch to the app, making it stand out from other to-do list applications. I am proud of this project and look forward to creating more innovative mobile applications in the future.
+
+You may find the source code [here](https://github.com/Sinnamoon/Dev_Mobile)
