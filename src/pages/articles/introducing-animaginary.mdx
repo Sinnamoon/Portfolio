@@ -1,18 +1,22 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import asteroids from './asteroids.png'
+import Image from 'next/image'
 
 export const meta = {
-  author: 'Adam Wathan',
-  date: '2022-09-02',
-  title: 'Introducing Animaginary: High performance web animations',
+  author: 'Joan Glendinning',
+  date: '2023-03-29',
+  title: 'Recreating a top down shooter in Unity',
   description:
     'When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.',
 }
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.
+In my second year of university we had about 2 months to freely choose a subject and produce something to present to the class. I chose to make a top down shooter in Unity inspired by one of my favourite games : Stardew Valley.
 
-To make this possible, we needed to squeeze every drop of performance out of the browser possible. And so Animaginary was born.
+To make this possible, I had to build a game from scratch, learn how to use Unity, and learn how to use C#. Thankfully, i had already made a first simple mini game in Unity, a remake of the popular arcade game Asteroids (which you can find on my [github](https://github.com/Sinnamoon/Asteroids)).  
+
+<Image src={asteroids} alt="" />
 
 ```js
 import { animate } from '@planetaria/animaginary'

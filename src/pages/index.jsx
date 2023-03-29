@@ -358,10 +358,10 @@ export default function Home({ articles }) {
               icon={InstagramIcon}
             /> */}
             <SocialLink
-              href="mailto:jonisouthanva@gmail.com"
-              aria-label="Email me"
-              icon={MailIcon}
-            />
+                href="mailto:joan.glendinning@ynov.com"
+                icon={MailIcon}
+                className="border-zinc-100 dark:border-zinc-700/40"
+              />
             <SocialLink
               href="https://github.com/Sinnamoon"
               aria-label="Follow on GitHub"
