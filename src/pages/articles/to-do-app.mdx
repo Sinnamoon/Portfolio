@@ -11,7 +11,7 @@ export const meta = {
   date: '2023-03-28',
   title: 'To do app in Android',
   description:
-    'Java is a widely-used programming language, but it has been around for a while and is not considered as cutting-edge as some of the newer languages. However, I found that Java\'s robustness and stability made it a great choice for developing a reliable and user-friendly to do app. Despite the popularity of newer programming languages, I believe that Java still has a lot to offer for mobile app development.',
+    "Java is a widely-used programming language, but it has been around for a while and is not considered as cutting-edge as some of the newer languages. However, I found that Java's robustness and stability made it a great choice for developing a reliable and user-friendly to do app. Despite the popularity of newer programming languages, I believe that Java still has a lot to offer for mobile app development.",
 }
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
@@ -19,15 +19,15 @@ export default (props) => <ArticleLayout meta={meta} {...props} />
 A native android application, made with android studio in Java, a simple light-weight to do list app implementing CRUD. DB is in SQLite. features a note app and a lottie animation when task is checked
 
 ## Screenshots of the application
-
-<div classname = "flex-auto flex-row">
+<div class="flex gap-6">
 <Image src={splash} alt="splash" width={200} height={350} />
-<Image src={animation} alt="animation" width={200} height={350}/>
-<Image src={edittasks} alt="edit" width={200} height={350}/>
+<Image src={animation} alt="animation" width={200} height={350} />
+<Image src={edittasks} alt="edit" width={200} height={350} />
 </div>
-<Image src={deltasks} alt="del" width={200} height={350}/>
-<Image src={note} alt="note" width={200} height={350}/>
-
+<div class="flex gap-6">
+<Image src={deltasks} alt="del" width={200} height={350} />
+<Image src={note} alt="note" width={200} height={350} />
+</div>
 
 ## Features
 
@@ -37,7 +37,7 @@ The app has a clean and minimalistic interface that is easy to navigate. Users c
 
 One of the unique features of this to-do list app is the note-taking feature. Users can navigate to a new note activity to jot down whatever thoughts they might have come up with. These notes are stored in the same database as the tasks and can be edited or deleted at any time.
 
-Implementing the CRUD functionality with SQLite was a key aspect of this project. 
+Implementing the CRUD functionality with SQLite was a key aspect of this project.
 
 The app was developed with my android phone instead of an emulator because i wanted the app to be sure the app would be usable. The theme is green and black because i wanted to subliminally remind the user to be productive and get things done. The app is also very light weight and does not take up much space on the phone. Today, it is even used by a classmate of mine as it does not consume many resources and is very intuitive to use.
 
