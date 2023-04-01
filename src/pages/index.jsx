@@ -300,15 +300,15 @@ export default function Home({ articles }) {
 
       <Container className="mt-9">
         <div className="max-w-3l">
-        {language === 'English' ? (
-        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software developper & student
-          </h1>
-        ) : (
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Développeuse web & étudiante
-          </h1>
-        )}
+          {language === 'English' ? (
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+              Software developper & student
+            </h1>
+          ) : (
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+              Développeuse web & étudiante
+            </h1>
+          )}
           {language === 'English' ? (
             <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
               <Balancer>
@@ -342,11 +342,11 @@ export default function Home({ articles }) {
                 attentes des clients. Mon expertise se situe dans l'HTML, CSS,
                 JavaScript et j'apprends constamment d'autres outils de
                 développement, telles que React, Angular et Node.js. <br />
-                Toujours prête à apprendre de nouvelles compétences et techniques
-                pour améliorer mes connaissances en développement Web, je suis à
-                la recherche d'une opportunité d'alternance en développement Web
-                afin d'acquérir de l'expérience et contribuer au succès
-                d'une entreprise.
+                Toujours prête à apprendre de nouvelles compétences et
+                techniques pour améliorer mes connaissances en développement
+                Web, je suis à la recherche d'une opportunité d'alternance en
+                développement Web afin d'acquérir de l'expérience et contribuer
+                au succès d'une entreprise.
               </Balancer>
             </p>
           )}
@@ -358,16 +358,16 @@ export default function Home({ articles }) {
               icon={InstagramIcon}
             /> */}
             <SocialLink
-                href="mailto:joan.glendinning@ynov.com"
-                icon={MailIcon}
-                className="border-zinc-100 dark:border-zinc-700/40"
-              />
+              href="mailto:joan.glendinning@ynov.com"
+              icon={MailIcon}
+              className="border-zinc-100 dark:border-zinc-700/40"
+            />
             <SocialLink
               href="https://github.com/Sinnamoon"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
-            
+
             <SocialLink
               href="https://www.linkedin.com/in/joan-glendinning-3a26971b6/"
               aria-label="Follow on LinkedIn"
@@ -376,7 +376,7 @@ export default function Home({ articles }) {
             <div classname="relative">
               <Button
                 variant="secondary"
-                className="absolute right-4 mx-3 rounded-full"
+                className="absolute right-24 rounded-full" 
                 style={{ borderRadius: '75%' }}
                 onClick={() => setLanguage('French')}
               >
@@ -384,7 +384,7 @@ export default function Home({ articles }) {
               </Button>
               <Button
                 variant="secondary"
-                className="absolute right-24 rounded-full"
+                className="absolute right-4 mx-3 rounded-full"
                 style={{ borderRadius: '75%' }}
                 onClick={() => setLanguage('English')}
               >
